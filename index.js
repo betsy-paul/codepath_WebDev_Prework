@@ -31,32 +31,36 @@ function addGamesToPage(games) {
     let gameLength = games.length; //tells how many objects are in the games array for forloop
 
     for (let iGames = 0; iGames < gameLength; iGames++) { // loop over each item in the data game array
-        const div = document.createElement("div"); // create a new div element, which will become the game card
-        div.classList.add("game-card");// add the class game-card to the list
+
+        const gameDiv = document.createElement("div"); // create a new div element, which will become the game card
+        gameDiv.classList.add("game-card");// add the class game-card to the list
 
         // set the inner HTML using a template literal to display some info 
         // about each game
         // TIP: if your images are not displaying, make sure there is space
         // between the end of the src attribute and the end of the tag ("/>")
 
-        div.innerHTML = `        
+        gameDiv.innerHTML = `
             <div class = "games">
-                <h2> ${div.name} </h2>
-                <img> src="${div.img}" class="game-img" alt="Image of ${div.name}" </img>
-                <p> Looking for an exciting game? Play ${div.name}! ${div.description} 
-                    Ranking ${div.ranking}, it is a sure way to get rid of boredom. Give it a try! 
-                </p>
+                <h2> ${games[iGames].name} </h2>
+                <img src="${games[iGames].img}" class="game-img" alt="Image of ${games[iGames].name}" >
+                <p> Looking for an exciting game? Play ${games[iGames].name}! ${games[iGames].description} 
+                    With ${games[iGames].backers} backers, you can be sure it is a great way to get rid of boredom. Give it a try! 
+                </p> 
             </div>
         `;
 
         // append the game to the games-container
-        const ourGamesHeading = document.getElementById('button-container');
-        parentElement.insertBefore(div, ourGamesHeading.nextSibling);
+        // const ourGamesHeading = document.getElementById('button-container');
+       // parentElement.insertBefore(gameDiv, ourGamesHeading.nextSibling);
+
+       const parentElement = document.getElementById('games-container');
+       parentElement.appendChild(gameDiv);
     }
 }
 
 // call the function we just defined using the correct variable
-addGamesToPage(gamesContainer);
+addGamesToPage(GAMES_JSON);
 
 // later, we'll call this function using a different list of games
 

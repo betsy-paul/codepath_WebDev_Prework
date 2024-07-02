@@ -24,7 +24,7 @@ body {
     flex-flow: row wrap; /* set flex direction to row, and flex wrap to wrap */
     justify-content: space-around; /* equal space around the item */
     align-items: center; /* i was stuck between this and stretch but it kinda makes no difference */
-    background-color: #e0eaf3c2; /* this is the css rule i added to the stats container. its pretty ugly tho */
+    background-color: #FFFFFF; /* this is the css rule i added to the stats container. its pretty ugly tho */
 
     button:hover {
         cursor: pointer;
@@ -57,8 +57,8 @@ body {
     box-shadow: 0 0 10px #FFFFFF;
 }
 
-.game-card {
-    background-color: #e0eaf3c2;
+.game-card {  /*um here's a comment bc i added this class*/
+    background-color: #FFFFFF;
     padding: 1%;
     margin: 1%;
     width: 300px;
