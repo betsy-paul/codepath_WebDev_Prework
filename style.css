@@ -11,7 +11,7 @@ body {
 
 .header {
     display: flex;
-    background-color: lightblue;
+    background-color: #add8e6;
     padding: 1%;
     align-items: center;
     margin-left: -10px;
@@ -20,7 +20,16 @@ body {
 }
 
 .stats-container {
-    display: flex;
+    display: flex; /* this defines the container */
+    flex-flow: row wrap; /* set flex direction to row, and flex wrap to wrap */
+    justify-content: space-around; /* equal space around the item */
+    align-items: center; /* i was stuck between this and stretch but it kinda makes no difference */
+    background-color: #e0eaf3c2; /* this is the css rule i added to the stats container. its pretty ugly tho */
+
+    button:hover {
+        cursor: pointer;
+        box-shadow: 0 0 30px lightblue;
+    }
 }
 
 .stats-card {
@@ -49,7 +58,7 @@ body {
 }
 
 .game-card {
-    background-color: #FFFFFF;
+    background-color: #e0eaf3c2;
     padding: 1%;
     margin: 1%;
     width: 300px;
