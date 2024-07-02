@@ -5,6 +5,11 @@ Submitted by: **Betsy-Jane Paul-Odionhin**
 **Name of your app** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
 Time spent: **X** hours spent in total
+challenge 1 = 1
+challenege 2 = 2
+challenge 3 = 8
+challenge 4 = 
+
 
 ## Required Features
 
@@ -35,6 +40,8 @@ GIF created with ...
 ## Notes
 
 Describe any challenges encountered while building the app.
+* DONT KNOW IF THIS IS WHAT THEY ARE ASKING FOR
+Challenge 3: calling the properties took a long while to remember how to do and is the main reason challenge 3 took so long. slight challenge in appending it as well but that was resolved pretty quickly. 
 
 ## License
 
