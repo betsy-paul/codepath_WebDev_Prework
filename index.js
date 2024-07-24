@@ -104,7 +104,7 @@ raisedCard.textContent = totRaised;
 const numberRaised = Number(raisedCard.textContent);
 raisedCard.innerHTML = `
     <p> 
-        ${numberRaised.toLocaleString()}
+        $${numberRaised.toLocaleString()}
     </p>
 `
 
