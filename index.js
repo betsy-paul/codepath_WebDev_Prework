@@ -72,22 +72,54 @@ addGamesToPage(GAMES_JSON);
 */
 
 // grab the contributions card element
-const contributionsCard = document.getElementById("num-contributions");
+ const contributionsCard = document.getElementById('num-contributions'); 
+// set the initial value
+ const iniVal = 0; 
 
 // use reduce() to count the number of total contributions by summing the backers
+const totCont = GAMES_JSON.reduce((accumulator, games) => {
+                return accumulator += games.backers;
+                }, iniVal)
 
+contributionsCard.textContent = totCont; //this assigning gave me so much trouble for no reason
 
 // set the inner HTML using a template literal and toLocaleString to get a number with commas
+const numberContributions = Number(contributionsCard.textContent);
+contributionsCard.innerHTML = `
+    <p> 
+        ${numberContributions.toLocaleString()}
+    </p>
+`
 
 
 // grab the amount raised card, then use reduce() to find the total amount raised
 const raisedCard = document.getElementById("total-raised");
+const totRaised = GAMES_JSON.reduce((accumulator, games) => {
+                  return accumulator += games.pledged;
+                  }, iniVal)
+
+raisedCard.textContent = totRaised;
 
 // set inner HTML using template literal
+const numberRaised = Number(raisedCard.textContent);
+raisedCard.innerHTML = `
+    <p> 
+        ${numberRaised.toLocaleString()}
+    </p>
+`
 
 
 // grab number of games card and set its inner HTML
 const gamesCard = document.getElementById("num-games");
+const totGames = GAMES_JSON.length; //Q: why didn't games.length work here as well?
+// set inner HTML using template literal
+const numberGames = Number(totGames);
+
+gamesCard.innerHTML = `
+    <p> 
+        ${numberGames.toLocaleString()}
+    </p>
+`
 
 
 /*************************************************************************************

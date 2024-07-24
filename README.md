@@ -7,8 +7,9 @@ Submitted by: **Betsy-Jane Paul-Odionhin**
 Time spent: **X** hours spent in total
 challenge 1 = 1
 challenege 2 = 2
-challenge 3 = 8
-challenge 4 = 
+challenge 3 = 6
+challenge 4 = 4
+challenge 5 = 
 
 
 ## Required Features

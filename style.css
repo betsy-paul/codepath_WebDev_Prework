@@ -24,7 +24,7 @@ body {
     flex-flow: row wrap; /* set flex direction to row, and flex wrap to wrap */
     justify-content: space-around; /* equal space around the item */
     align-items: center; /* i was stuck between this and stretch but it kinda makes no difference */
-    background-color: #FFFFFF; /* this is the css rule i added to the stats container. its pretty ugly tho */
+    background-color: #758190; /* this is the css rule i added to the stats container. its pretty ugly tho */
 
     button:hover {
         cursor: pointer;
