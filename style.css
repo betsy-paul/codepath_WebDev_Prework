@@ -21,7 +21,7 @@ body {
 
 .stats-container {
     display: flex; /* this defines the container */
-    flex-flow: row wrap; /* set flex direction to row, and flex wrap to wrap */
+    flex-flow: row nowrap; /* set flex direction to row, and flex wrap to nowrap, defaults */
     justify-content: space-around; /* equal space around the item */
     align-items: center; /* i was stuck between this and stretch but it kinda makes no difference */
     background-color: #758190; /* this is the css rule i added to the stats container. its pretty ugly tho */
