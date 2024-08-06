@@ -10,7 +10,8 @@ challenege 2 = 2
 challenge 3 = 6
 challenge 4 = 4
 challenge 5 = 0.5
-challenge 6 = 1hr 15 mins + 
+challenge 6 = 2.25
+challenge 7 = approx 3:44
 
 
 ## Required Features

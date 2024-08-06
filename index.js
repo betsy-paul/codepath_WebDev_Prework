@@ -188,23 +188,31 @@ const unfundedGamesCount = GAMES_JSON.reduce((count, games) => {
 
 const unfundedCountNumber = Number(unfundedGamesCount);
 
-//NOT SURE IF ANY OF THE BELOW WORKS
+
 // use ternary operator to determine this or these
-let thisOrThese = `${unfundedGamesCount = 1 ? "this": "these"}`;
+let thisOrThese = `${unfundedGamesCount === 1 ? "this": "these"}`;
 
 // use ternary operator to determine game or games
-let gameOrGames = `${unfundedGamesCount = 1 ? "game": "games"}`;
+let sOrNot = `${unfundedGamesCount === 1 ? "": "s"}`;
+
+// use ternary operator to determine remain or remains
+let remainsOrNot = `${unfundedGamesCount === 1 ? "s": ""}`;
 
 // create a string that explains the number of unfunded games using the ternary operator
 const displayStr = `
     <p> 
-        A total of ${numberRaised.toLocaleString()} has been raised for ${games.length} games. 
-        Unfortunately, ${unfundedCountNumber.toLocaleString()} remains unfunded. 
-        We need your help to fund ${thisOrThese} amazing ${gameOrGames}.
+        A total of ${numberRaised.toLocaleString()} has been raised for ${numberGames.toLocaleString()} games. 
+        Currently, ${unfundedCountNumber.toLocaleString()} remain${remainsOrNot} unfunded. 
+        We need your help to fund ${thisOrThese} amazing game${sOrNot}!
     </p>
 `
 
 // create a new DOM element containing the template string and append it to the description container
+const newDisplayStr = document.createElement('div');
+newDisplayStr.innerHTML = displayStr;
+
+// Append the new element to the description container
+descriptionContainer.appendChild(newDisplayStr);
 
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
