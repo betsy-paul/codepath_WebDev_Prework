@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
 body {
-    font-family: 'Cabin';
-    background-color: #758190;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #77acec;
 }
 
 #tentacles {
@@ -11,7 +11,7 @@ body {
 
 .header {
     display: flex;
-    background-color: #add8e6;
+    background-color: #d6e8fe;
     padding: 1%;
     align-items: center;
     margin-left: -10px;
@@ -24,7 +24,7 @@ body {
     flex-flow: row nowrap; /* set flex direction to row, and flex wrap to nowrap, defaults */
     justify-content: space-around; /* equal space around the item */
     align-items: center; /* i was stuck between this and stretch but it kinda makes no difference */
-    background-color: #758190; /* this is the css rule i added to the stats container. its pretty ugly tho */
+    background-color: #77acec; /* this is the css rule i added to the stats container. its pretty ugly tho */
 
     button:hover {
         cursor: pointer;
@@ -33,7 +33,7 @@ body {
 }
 
 .stats-card {
-    background-color: #a8b0bc;
+    background-color: #5c87cb;
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
@@ -58,7 +58,7 @@ body {
 }
 
 .game-card {  /*um here's a comment bc i added this class*/
-    background-color: #FFFFFF;
+    background-color: #5c87cb;
     padding: 1%;
     margin: 1%;
     width: 300px;
@@ -76,14 +76,33 @@ body {
 }
 
 button {
-    font-family: 'Cabin';
-    border: none;
+    font-family: "Times New Roman", Times, serif;
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
 }
 
 .search-wrapper {
+    background-color: #5c87cb;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.9%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 1%;
+    margin-left: 20px;
+    margin-right: 20px; /*
+   width: 300px; when i add width it decenters?? */
+    /* margin-left: 44%; */
+}
+
+hr {
+    width: 101.2%;
+    height: 4px;
+    background-color: #5076b3;
+    padding: 0%;
+    margin-top: -2px;
+    margin-left: -10px;
+
 }

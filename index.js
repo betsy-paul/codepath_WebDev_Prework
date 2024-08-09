@@ -187,10 +187,19 @@ searchBar.addEventListener('keyup', (e) => {
                 return games.name.toLowerCase().includes(searchString) || games.description.toLowerCase().includes(searchString);
             });
 
-            addGamesToPage(gamesThatPassed);
-            // use the function we previously created to add filter games to the DOM
+            // extra if statement for error if search string doesnt match anything
+            if (gamesThatPassed.length === 0) {
+                // Display a message when no games match the search
+                const noResultsMessage = document.createElement('p');
+                noResultsMessage.textContent = 'Sorry, no games match that search.';
+                gamesContainer.appendChild(noResultsMessage);
+            } else {
+                addGamesToPage(gamesThatPassed);
+                // use the function we previously created to add filtered games to the DOM
+            }
         }
     }
+
     filterGames();
 });
 

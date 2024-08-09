@@ -11,7 +11,7 @@ challenge 3 = 6
 challenge 4 = 4
 challenge 5 = 0.5
 challenge 6 = 2.25
-challenge 7 = approx 3:44
+challenge 7 = 30 mins for challenge, 4 hours for search bar
 
 
 ## Required Features
