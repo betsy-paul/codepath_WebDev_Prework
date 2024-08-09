@@ -51,8 +51,6 @@ function addGamesToPage(games) {
         `;
 
         // append the game to the games-container
-        // const ourGamesHeading = document.getElementById('button-container');
-       // parentElement.insertBefore(gameDiv, ourGamesHeading.nextSibling);
 
        const parentElement = document.getElementById('games-container');
        parentElement.appendChild(gameDiv);
@@ -172,6 +170,30 @@ unfundedBtn.addEventListener("click", filterUnfundedOnly);
 fundedBtn.addEventListener("click", filterFundedOnly);
 allBtn.addEventListener("click", showAllGames);
 
+// make a search bar for the array of games in GAMES_JSON
+searchBar.addEventListener('keyup', (e) => {
+    let searchString = e.target.value.trim().toLowerCase();
+
+    // show only games that passed the filter
+    function filterGames() {
+        deleteChildElements(gamesContainer);
+
+        if (searchString === "") {
+            // when search bar is emptY, show all games)
+            addGamesToPage(GAMES_JSON);
+        } else {
+            // use filter() to get a list of games that meet filter requirement
+            let gamesThatPassed = GAMES_JSON.filter((games) => {
+                return games.name.toLowerCase().includes(searchString) || games.description.toLowerCase().includes(searchString);
+            });
+
+            addGamesToPage(gamesThatPassed);
+            // use the function we previously created to add filter games to the DOM
+        }
+    }
+    filterGames();
+});
+
 /*************************************************************************************
  * Challenge 6: Add more information at the top of the page about the company.
  * Skills used: template literals, ternary operator
@@ -227,7 +249,14 @@ const sortedGames =  GAMES_JSON.sort( (item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
+const [firstGame, runnerGame, ...remainingGames] = sortedGames;
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
+const firstGameEl = document.createElement('div');
+firstGameEl.innerText = firstGame.name;
+firstGameContainer.appendChild(firstGameEl);
 
 // do the same for the runner up item
+const runnerGameEl = document.createElement('div');
+runnerGameEl.innerText = runnerGame.name;
+secondGameContainer.appendChild(runnerGameEl);
