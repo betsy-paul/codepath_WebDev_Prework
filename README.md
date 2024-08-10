@@ -45,7 +45,7 @@ GIF created with LiceCap
 ## Notes
 
 Describe any challenges encountered while building the app.
-* DONT KNOW IF THIS IS WHAT THEY ARE ASKING FOR
+* DONT KNOW IF THIS IS WHAT THEY ARE ASKING FOR BUT
 Challenge 3: calling the properties took a long while to remember how to do and is the main reason challenge 3 took so long. slight challenge in appending it as well but that was resolved pretty quickly. 
 Challenge 7: Not in building, but in submitting. One of the links on the prework website doesn't work. 
 
