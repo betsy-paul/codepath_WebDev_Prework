@@ -1,17 +1,17 @@
-# WEB102 Prework - *Name of App Here*
+# WEB102 Prework - *Sea Monster Website*
 
 Submitted by: **Betsy-Jane Paul-Odionhin**
 
-**Name of your app** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+**Sea Monster** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: **X** hours spent in total
+Time spent: **20.25** hours spent in total
 challenge 1 = 1
 challenege 2 = 2
 challenge 3 = 6
 challenge 4 = 4
 challenge 5 = 0.5
 challenge 6 = 2.25
-challenge 7 = 30 mins for challenge, 4 hours for search bar
+challenge 7 = 30 mins for challenge, 4 hours for search bar functionality
 
 
 ## Required Features
@@ -24,17 +24,19 @@ The following **required** functionality is completed:
 * [ ] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
 
 The following **optional** features are implemented:
-s
 * [ ] List anything else that you can get done to improve the app functionality!
+search bar - done
+nav panel - working on it
+
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/EiH6fUc' title='Betsy_P Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with LiceCap
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -45,6 +47,7 @@ GIF created with ...
 Describe any challenges encountered while building the app.
 * DONT KNOW IF THIS IS WHAT THEY ARE ASKING FOR
 Challenge 3: calling the properties took a long while to remember how to do and is the main reason challenge 3 took so long. slight challenge in appending it as well but that was resolved pretty quickly. 
+Challenge 7: Not in building, but in submitting. One of the links on the prework website doesn't work. 
 
 ## License
 
