@@ -179,7 +179,7 @@ searchBar.addEventListener('keyup', (e) => {
         deleteChildElements(gamesContainer);
 
         if (searchString === "") {
-            // when search bar is emptY, show all games)
+            // when search bar is empty, show all games)
             addGamesToPage(GAMES_JSON);
         } else {
             // use filter() to get a list of games that meet filter requirement
