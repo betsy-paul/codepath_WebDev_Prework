@@ -33,7 +33,7 @@ nav panel - working on it
 
 Here's a walkthrough of implemented features:
 
-<img src='https://imgur.com/a/EiH6fUc' title='Betsy_P Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/uba35fg.gif' title='Betsy_P Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LiceCap
