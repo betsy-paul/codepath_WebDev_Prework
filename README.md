@@ -4,7 +4,7 @@ Submitted by: **Betsy-Jane Paul-Odionhin**
 
 **Sea Monster** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: **20.25** hours spent in total
+Time spent: **24.75** hours spent in total
 challenge 1 = 1
 challenege 2 = 2
 challenge 3 = 6
@@ -12,7 +12,7 @@ challenge 4 = 4
 challenge 5 = 0.5
 challenge 6 = 2.25
 challenge 7 = 30 mins for challenge, 4 hours for search bar functionality
-extra stuff - 2 mins for hover (need to add to time), 4 hours for extra page and a little nav bar link (wanna update spacing though)
+extra stuff - 2 mins for hover (need to add to time), 4.5 hours for extra page and a little nav bar moment
 
 
 ## Required Features
