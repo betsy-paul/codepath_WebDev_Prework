@@ -69,6 +69,7 @@ body {
 .game-card:hover {
     cursor: pointer;
     box-shadow: 0 0 30px lightblue;
+    transform: scale(1.08);
 }
 
 #button-container {

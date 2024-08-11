@@ -12,6 +12,7 @@ challenge 4 = 4
 challenge 5 = 0.5
 challenge 6 = 2.25
 challenge 7 = 30 mins for challenge, 4 hours for search bar functionality
+extra stuff - 2 mins for hover (need to add to time)
 
 
 ## Required Features
@@ -26,6 +27,7 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 * [ ] List anything else that you can get done to improve the app functionality!
 search bar - done
+pop out on hover - done
 nav panel - working on it
 
 
@@ -47,7 +49,7 @@ GIF created with LiceCap
 Describe any challenges encountered while building the app.
 * DONT KNOW IF THIS IS WHAT THEY ARE ASKING FOR
 Challenge 3: calling the properties took a long while to remember how to do and is the main reason challenge 3 took so long. slight challenge in appending it as well but that was resolved pretty quickly. 
-Challenge 7: Not in building, but in submitting. One of the links on the prework website doesn't work. 
+Challenge 7: Not in building, but in submitting. One of the links on the prework website submission page doesn't work. 
 
 ## License
 
