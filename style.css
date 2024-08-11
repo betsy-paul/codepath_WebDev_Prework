@@ -9,6 +9,10 @@ body {
     width: 50px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
     display: flex;
     background-color: #d6e8fe;
