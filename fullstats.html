@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Full Game Stats </title>
+  </head>
+
+  <body>
+    <!-- header row with logo -->
+    <div class="header">
+        <img id="tentacles" src="assets/tentacles.png">
+        <h1 class="header-text">  Sea Monster Crowdfunding &nbsp </h1>
+        <a href="index.html" style="text-decoration:none; color:black; text-align: right;"> Home</a>
+        
+        <!--
+        
+            <div class="other-search-wrapper">          
+                <id="searchWrapper">
+                    <input 
+                        type="text"
+                        name="searchBar"
+                        id="searchBar"
+                        placeholder="Search Games"
+                    />
+                </div>  
+        --> 
+    </div>
+
+    <!--
+        <div  class="header">
+            <a href="index.html" style="text-decoration:none; color:black; text-align: right;"> Home</a>
+        </div> 
+     -->
+
+    <div class="demarcation"> <hr> </div>
+
+    <div class="game-list"></div>
+    <template data-user-template>
+        <div class="gameOne">
+            <div class="header"></div>
+            <div class="body"></div>
+        </div>
+    </template>
+
+    <!-- rest of the website -->
+    <br>
+    <h4> Here are the complete statistics for our supported games! </h4>
+        <!-- list of games funded by Sea Monster -->
+        <div id="button-container">
+            <button class= "game-card" id="all-btn">Show All Games</button>       
+            <button class= "game-card" id="unfunded-btn">Show Unfunded Only</button>
+            <button class= "game-card" id="funded-btn">Show Funded Only</button>
+        </div>
+
+        <!-- search bar stuff -->
+        <div class="search-wrapper">
+            <label for="search"> Search Our Game Catalog! &nbsp; </label>
+            <input type="search" id="searchBar" color="black">
+        </div>
+
+    <div id="games-container"></div>
+
+    <script type="module" src="fullstats.js"></script>
+  </body>
+</html>

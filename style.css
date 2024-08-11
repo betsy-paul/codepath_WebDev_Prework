@@ -72,6 +72,22 @@ body {
     transform: scale(1.08);
 }
 
+/* i was thinking to make it a button but that got too busy
+.nav-bar {
+    background-color: #5c87cb;
+    padding: 1%;
+    margin: 1%;
+    width: 100px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.nav-bar:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+}
+*/
+
 #button-container {
     text-align: center;
 }
