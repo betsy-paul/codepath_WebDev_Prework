@@ -38,11 +38,11 @@ function addGamesToPage(games) {
                     <br>
                     About: ${games[iGames].description} 
                     <br>
+                    Amount Raised: ${games[iGames].pledged} 
+                    <br>
                     Backers: ${games[iGames].backers} 
                     <br>
                     Target: ${games[iGames].goal} 
-                    <br>
-                    Amount Raised: ${games[iGames].pledged} 
                 </p> 
             </div>
         `;
@@ -131,3 +131,41 @@ searchBar.addEventListener('keyup', (e) => {
 
     filterGames();
 });
+
+
+// filter field stuff idk
+function backersFilter()  {
+    const copyOfGames = [...GAMES_JSON];
+    const orderedGames =  copyOfGames.sort((item1, item2) => {
+        return item2.backers - item1.backers;
+    });
+    addGamesToPage(orderedGames);
+}
+
+const backersBtn = document.getElementById("backers-btn");
+backersBtn.addEventListener("click", backersFilter);
+
+
+function amountRFilter()  {
+    const copyOfGames = [...GAMES_JSON];
+    const orderedGames =  copyOfGames.sort((item1, item2) => {
+        return item2.pledged - item1.pledged;
+    });
+
+    addGamesToPage(orderedGames);
+}
+
+const amountBtn = document.getElementById("amount-btn");
+amountBtn.addEventListener("click", amountRFilter);
+
+
+function targetFilter()  {
+    const copyOfGames = [...GAMES_JSON];
+    const orderedGames =  copyOfGames.sort((item1, item2) => {
+        return item2.goal - item1.goal;
+    });
+    addGamesToPage(orderedGames);
+}
+
+const targetBtn = document.getElementById("target-btn");
+targetBtn.addEventListener("click", targetFilter);

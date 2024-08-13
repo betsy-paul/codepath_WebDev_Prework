@@ -28,7 +28,7 @@ The following **optional** features are implemented:
 * [ ] List anything else that you can get done to improve the app functionality!
 search bar - done
 pop out on hover - done
-nav panel - working on it
+nav panel - working on it, some bugs to fix. not that it matters now. 
 
 
 ## Video Walkthrough
