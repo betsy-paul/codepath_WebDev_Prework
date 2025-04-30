@@ -10,25 +10,33 @@
   <body>
     <!-- header row with logo -->
     <div class="header">
-        <img id="tentacles" src="assets/tentacles.png">
-        <h1 class="header-text">  Sea Monster Crowdfunding </h1>
-        <a class="nav-bar" 
-            href="fullstats.html" 
-            style="text-decoration:none; color:black;"> 
-            &nbsp; Statistics 
-        </a>
-        <!-- should probably add it to class nav bar but im feeling lazy and this works so we're keeping it-->
-        <p onClick="document.getElementById('searchBar').scrollIntoView();">Games &nbsp; &nbsp; &nbsp; &nbsp; </p>
-        <!-- didnt do search bar for element bc would scroll too far -->
-        <input
-            type="image" 
-            src="https://cdn-icons-png.freepik.com/512/8539/8539336.png"
-            width="20" 
-            height="20"
-            onClick="document.getElementById('button-container').scrollIntoView();"
-        />
+        <nav>
+            <img id="tentacles" src="assets/tentacles.png">
+            <h1 class="header-text">  Sea Monster Crowdfunding </h1>
+            <ul>
+                <li><a 
+                    href="fullstats.html" 
+                    style="text-decoration:none; color:black;"> Statistics </a></li>  <!--class="nav-bar" after the a  -->
+
+                <li> <p onClick="document.getElementById('searchBar').scrollIntoView();"> Games </p> </li>
+                    <!-- didnt do search bar for element bc would scroll too far --> 
+                
+                <li> <input
+                        type="image" 
+                        src="https://cdn-icons-png.freepik.com/512/8539/8539336.png"
+                        width="20" 
+                        height="20"
+                        onClick="document.getElementById('button-container').scrollIntoView();"
+                    /> </li>    
+            </ul>
+
+            <!-- should probably add it to class nav bar but im feeling lazy and this works so we're keeping it-->
+            <!-- yeah except it didnt work -->
+            <div class="demarcation"> <hr> </div>
+            
+        </nav>
     </div>
-    <div class="demarcation"> <hr> </div>
+
 
     <div class="game-list"></div>
     <template data-user-template>
