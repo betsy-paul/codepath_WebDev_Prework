@@ -2,7 +2,7 @@
 
 body {
     font-family: "Times New Roman", Times, serif;
-    background-color: #b7d4f7; /*77acec*/
+    background-color: #0a273c; /*77acec*/
 }
 
 #tentacles {
@@ -15,15 +15,13 @@ html {
 
 .header {
     width:100%;
-    height: 4%;
-    padding: 0 10%;
+    height: 0.2%;
+    padding: 2%;
     background-color: #d6e8fe;
-    /* display: flex;
-    padding: 1%;
     align-items: center;
+    margin-inline: 2px;
     margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px; */
+    margin-top: -10px;
 }
 
 nav{
@@ -31,7 +29,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
 }
 
 nav ul li{
@@ -48,7 +45,7 @@ nav ul li a{
     width: 100%;
     display: flex; /* this defines the container */
     flex-flow: row nowrap; /* set flex direction to row, and flex wrap to nowrap, defaults */
-    justify-content: space-around; /* equal space around the item */
+    justify-content: space-between; /* equal space between items */
     align-items: center; /* i was stuck between this and stretch but it kinda makes no difference */
     background-color: #b7d4f7; /* this is the css rule i added to the stats container. its pretty ugly tho */
 
@@ -98,15 +95,14 @@ nav ul li a{
     transform: scale(1.08);
 }
 
-.nav-bar {
-    /*background-color: #5c87cb;*/
+/* .nav-bar {
+    this was commented out (background-color: #5c87cb;)
     padding: 1%;
     margin: 1%;
-    width: 100px;
+    width: 100%;
     text-align: center;
     border-radius: 7px;
-    margin-left: 50%;
-}
+    margin-left: 50%; */
 
 /* i was thinking to make it a button but that got too busy
 .nav-bar:hover {
@@ -142,11 +138,37 @@ button {
 }
 
 hr {
-    width: 101.2%;
+    width: 100%;
     height: 4px;
     background-color: #5076b3;
     padding: 0%;
-    margin-top: -2px;
-    margin-left: -10px;
+    margin-top: 0;
+    margin-left: 0px;
 
+}
+
+.text-box {
+    margin-top: 10px;
+    max-width: 50%;
+}
+
+.user-box{
+    position: absolute;
+    top: 172px;
+    right: 2%;
+    display: flex; /* this defines the container */
+    flex: 1;
+    justify-content: flex-end;
+}
+/* Media query for smaller screens */
+@media (max-width: 50%) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .text-box, .user-box {
+        max-width: 100%; /* Allow full width on small screens */
+        margin-right: 0; /* Remove right margin */
+    }
 }

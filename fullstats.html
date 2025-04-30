@@ -9,31 +9,32 @@
 
   <body>
     <!-- header row with logo -->
+     <!-- header row with logo -->
     <div class="header">
-        <img id="tentacles" src="assets/tentacles.png">
-        <h1 class="header-text">  Sea Monster Crowdfunding &nbsp </h1>
-        <a class="nav-bar" href="index.html" style="text-decoration:none; color:black;"> Home</a>
-        <p onClick="document.getElementById('searchBar').scrollIntoView();">Games &nbsp; &nbsp; &nbsp; &nbsp;</p>
-        <input
-            type="image" 
-            src="https://cdn-icons-png.freepik.com/512/8539/8539336.png"
-            width="20" 
-            height="20"
-            width=""
-            onClick="document.getElementById('button-container').scrollIntoView();"
-        />
-        <!--
-        
-            <div class="other-search-wrapper">          
-                <id="searchWrapper">
-                    <input 
-                        type="text"
-                        name="searchBar"
-                        id="searchBar"
-                        placeholder="Search Games"
-                    />
-                </div>  
-        --> 
+        <nav>
+            <img id="tentacles" src="assets/tentacles.png">
+            <h1 class="header-text">  Sea Monster Crowdfunding </h1>
+            <ul>
+                <li><a
+                    href="index.html" 
+                    style="text-decoration:none; color:black;"> Home </a></li>  <!--class="nav-bar" after the a  -->
+
+                <li> <p onClick="document.getElementById('searchBar').scrollIntoView();"> Games </p> </li>
+                    <!-- didnt do search bar for element bc would scroll too far --> 
+                
+                <li> <input
+                        type="image" 
+                        src="https://cdn-icons-png.freepik.com/512/8539/8539336.png"
+                        width="20" 
+                        height="20"
+                        onClick="document.getElementById('button-container').scrollIntoView();"
+                    /> </li>    
+            </ul>
+
+            <!-- should probably add it to class nav bar but im feeling lazy and this works so we're keeping it-->
+            <!-- yeah except it didnt work -->
+
+        </nav>
     </div>
 
     <!-- for if i want the search bar words to be below
@@ -41,8 +42,6 @@
             <a href="index.html" style="text-decoration:none; color:black; text-align: right;"> Home</a>
         </div> 
      -->
-
-    <div class="demarcation"> <hr> </div>
 
     <div class="game-list"></div>
     <template data-user-template>
