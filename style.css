@@ -2,7 +2,7 @@
 
 body {
     font-family: "Times New Roman", Times, serif;
-    background-color: #CCE9F5; /*77acec*/
+    background-color: #e7f8ff; /*77acec*/
     margin: 0.1px;
 }
 
@@ -48,7 +48,7 @@ nav ul li a{
     flex-flow: row nowrap; /* set flex direction to row, and flex wrap to nowrap, defaults */
     justify-content: space-between; /* equal space between items */
     align-items: center; /* i was stuck between this and stretch but it kinda makes no difference */
-    background-color: #CCE9F5; /* this is the css rule i added to the stats container. its pretty ugly tho */
+    background-color: #e7f8ff; /* this is the css rule i added to the stats container. its pretty ugly tho */
 
     button:hover {
         cursor: pointer;

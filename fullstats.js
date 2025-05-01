@@ -103,6 +103,33 @@ function amountRFilter() {
     addGamesToPage(orderedGames);
 }
 
+// filter field stuff idk
+function backersFilter()  {
+    deleteChildElements(gamesContainer);
+    
+    const copyOfGames = [...GAMES_JSON];
+    const orderedGames =  copyOfGames.sort((item1, item2) => {
+        return item2.backers - item1.backers;
+    });
+    addGamesToPage(orderedGames);
+}
+
+const backersBtn = document.getElementById("backers-btn");
+backersBtn.addEventListener("click", backersFilter);
+
+function targetFilter()  {
+    deleteChildElements(gamesContainer);
+    
+    const copyOfGames = [...GAMES_JSON];
+    const orderedGames =  copyOfGames.sort((item1, item2) => {
+        return item2.goal - item1.goal;
+    });
+    addGamesToPage(orderedGames);
+}
+
+const targetBtn = document.getElementById("target-btn");
+targetBtn.addEventListener("click", targetFilter);
+
 // select each button in the "Our Games" section
 const unfundedBtn = document.getElementById("unfunded-btn");
 const fundedBtn = document.getElementById("funded-btn");
@@ -153,30 +180,3 @@ searchBar.addEventListener('keyup', (e) => {
 
     filterGames();
 });
-
-
-// filter field stuff idk
-function backersFilter()  {
-    const copyOfGames = [...GAMES_JSON];
-    const orderedGames =  copyOfGames.sort((item1, item2) => {
-        return item2.backers - item1.backers;
-    });
-    addGamesToPage(orderedGames);
-}
-
-const backersBtn = document.getElementById("backers-btn");
-backersBtn.addEventListener("click", backersFilter);
-
-// const amountBtn = document.getElementById("amount-btn");
-
-
-function targetFilter()  {
-    const copyOfGames = [...GAMES_JSON];
-    const orderedGames =  copyOfGames.sort((item1, item2) => {
-        return item2.goal - item1.goal;
-    });
-    addGamesToPage(orderedGames);
-}
-
-const targetBtn = document.getElementById("target-btn");
-targetBtn.addEventListener("click", targetFilter);
