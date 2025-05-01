@@ -12,7 +12,7 @@ challenge 4 = 4
 challenge 5 = 0.5
 challenge 6 = 2.25
 challenge 7 = 30 mins for challenge, 4 hours for search bar functionality
-extra stuff - 2 mins for hover (need to add to time), 4.5 hours for extra page and a little nav bar moment
+extra stuff - 2 mins for hover (need to add to time), 6.5 hours for extra page and a little nav bar moment
 
 
 ## Required Features
@@ -28,7 +28,8 @@ The following **optional** features are implemented:
 * [ ] List anything else that you can get done to improve the app functionality!
 search bar - done
 pop out on hover - done
-nav panel - working on it, some bugs to fix. not that it matters now. 
+nav panel - working on it
+side by side display of aboutt and octopus gif - done
 
 
 ## Video Walkthrough

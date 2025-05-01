@@ -88,16 +88,38 @@ function showAllGames() {
     addGamesToPage(GAMES_JSON); // add all games from the JSON data to the DOM
 }
 
+// add games to page based on amount raised
+function amountRFilter() {
+    deleteChildElements(gamesContainer);
+
+    const copyOfGames = [...GAMES_JSON];
+    console.log("Original games:", copyOfGames); // Check the original data
+
+    const orderedGames = copyOfGames.sort((item1, item2) => {
+        return item2.pledged - item1.pledged;
+    });
+    console.log("Sorted games:", orderedGames); // Check the sorted data
+
+    addGamesToPage(orderedGames);
+}
+
 // select each button in the "Our Games" section
 const unfundedBtn = document.getElementById("unfunded-btn");
 const fundedBtn = document.getElementById("funded-btn");
 const allBtn = document.getElementById("all-btn");
+const amountBtn = document.getElementById("amount-btn");
 
+if (amountBtn) { // Check if the button exists
+    amountBtn.addEventListener("click", amountRFilter);
+} else {
+    console.error("Button with ID 'amount-btn' not found.");
+}
 
 // add event listeners with the correct functions to each button
 unfundedBtn.addEventListener("click", filterUnfundedOnly);
 fundedBtn.addEventListener("click", filterFundedOnly);
 allBtn.addEventListener("click", showAllGames);
+amountBtn.addEventListener("click", amountRFilter);
 
 // make a search bar for the array of games in GAMES_JSON
 searchBar.addEventListener('keyup', (e) => {
@@ -145,18 +167,7 @@ function backersFilter()  {
 const backersBtn = document.getElementById("backers-btn");
 backersBtn.addEventListener("click", backersFilter);
 
-
-function amountRFilter()  {
-    const copyOfGames = [...GAMES_JSON];
-    const orderedGames =  copyOfGames.sort((item1, item2) => {
-        return item2.pledged - item1.pledged;
-    });
-
-    addGamesToPage(orderedGames);
-}
-
-const amountBtn = document.getElementById("amount-btn");
-amountBtn.addEventListener("click", amountRFilter);
+// const amountBtn = document.getElementById("amount-btn");
 
 
 function targetFilter()  {
