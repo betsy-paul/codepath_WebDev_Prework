@@ -12,7 +12,7 @@ challenge 4 = 4
 challenge 5 = 0.5
 challenge 6 = 2.25
 challenge 7 = 30 mins for challenge, 4 hours for search bar functionality
-extra stuff - 2 mins for hover (need to add to time), 8.5 hours for extra page and a little nav bar moment
+extra stuff - 2 mins for hover (need to add to time), 11 hours for extra page, filters and a little nav bar moment
 
 
 ## Required Features

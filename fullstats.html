@@ -51,6 +51,39 @@
         </div>
     </template>
 
+    <!-- guess the letter game -->
+    <h2>Guess the Letter Game</h2>
+    <p>What letter am I thinking of? </p>
+    <input class = "search-pretty" type="text" id="userInput" maxlength="1" placeholder="Enter a letter" />
+    <button class = "guessBtn" onclick="guessLetter()"> Guess </button>
+    <div id="message"> </div>
+
+    <script>
+        const correctLetter = String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+        let tries = 0;
+      
+        function guessLetter() {
+          const userInput = document.getElementById('userInput').value.toUpperCase();
+          const message = document.getElementById('message');
+      
+          if (userInput.length !== 1 || !/[A-Z]/.test(userInput)) {
+            message.textContent = "Oops! That's not a letter :(";
+            return;
+          }
+      
+          tries++;
+      
+          if (userInput === correctLetter) {
+            message.textContent = "Congratulations! You guessed the correct letter! :D ";
+          } else if (tries < 2) {
+            message.textContent = "Wrong guess :( Try again.";
+          } else {
+            message.textContent = `So sorry, the correct letter was ${correctLetter}.`;
+          }
+        }
+      </script>
+
+
     <!-- rest of the website -->
     <br>
     <h4> Here are the complete statistics for our supported games! </h4>
