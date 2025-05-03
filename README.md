@@ -38,7 +38,7 @@ mini game - done
 
 Here's a walkthrough of implemented features:
 
-<img src='https://imgur.com/a/urLNPCr' title='Betsy_P Video Walkthrough' width='' alt='Betsy_P Video Walkthrough' />
+<img src='https://i.imgur.com/wRbYByB.gif' title='Betsy_P Video Walkthrough' width='' alt='Betsy_P Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LiceCap
