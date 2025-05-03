@@ -4,6 +4,7 @@ body {
     font-family: "Times New Roman", Times, serif;
     background-color: #e7f8ff; /*77acec*/
     margin: 0.1px;
+    padding: 2%;
 }
 
 #tentacles {
@@ -20,7 +21,6 @@ html {
     padding: 2%;
     background-color: #7e9e9f;
     align-items: center;
-    margin-top: -10px;
 }
 
 nav{
@@ -119,6 +119,7 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+    background-color: #BCDEF1;
 }
 
 .search-wrapper {
