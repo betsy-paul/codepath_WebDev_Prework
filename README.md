@@ -12,31 +12,33 @@ challenge 4 = 4
 challenge 5 = 0.5
 challenge 6 = 2.25
 challenge 7 = 30 mins for challenge, 4 hours for search bar functionality
-extra stuff - 2 mins for hover (need to add to time), 11 hours for extra page, filters and a little nav bar moment
+extra stuff - 2 mins for hover (need to add to time), 11 hours for extras
 
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-* [ ] The introduction section explains the background of the company and how many games remain unfunded.
-* [ ] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
-* [ ] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
-* [ ] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
+* [x] The introduction section explains the background of the company and how many games remain unfunded.
+* [x] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
+* [x] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
+* [x] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
 
 The following **optional** features are implemented:
-* [ ] List anything else that you can get done to improve the app functionality!
+* [x] List anything else that you can get done to improve the app functionality!
 search bar - done
 pop out on hover - done
-nav panel - working on it
-side by side display of aboutt and octopus gif - done
+nav panel - done
+extra page - done
+extra filter buttons - done
+mini game - done
 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='https://i.imgur.com/uba35fg.gif' title='Betsy_P Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/urLNPCr' title='Betsy_P Video Walkthrough' width='' alt='Betsy_P Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LiceCap
