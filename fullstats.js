@@ -11,7 +11,6 @@ function deleteChildElements(parent) {
     }
 }
 
-
 // grab the element with the id games-container
 const gamesContainer = document.getElementById("games-container");
 
@@ -119,7 +118,7 @@ backersBtn.addEventListener("click", backersFilter);
 
 function targetFilter()  {
     deleteChildElements(gamesContainer);
-    
+
     const copyOfGames = [...GAMES_JSON];
     const orderedGames =  copyOfGames.sort((item1, item2) => {
         return item2.goal - item1.goal;

@@ -160,7 +160,8 @@ hr {
     flex: 1;
     justify-content: flex-end;
 }
-/* Media query for smaller screens */
+
+/* for smaller screens */
 @media (max-width: 50%) {
     .container {
         flex-direction: column; /* Stack items vertically */

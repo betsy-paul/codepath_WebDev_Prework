@@ -205,6 +205,7 @@ searchBar.addEventListener('keyup', (e) => {
     filterGames();
 });
 
+
 /*************************************************************************************
  * Challenge 6: Add more information at the top of the page about the company.
  * Skills used: template literals, ternary operator
